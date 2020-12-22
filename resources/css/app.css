@@ -1,0 +1,11 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+div {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 1rem;
+}

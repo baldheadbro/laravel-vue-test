@@ -1,0 +1,268 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+}
+
+/* Overlays */
+.overlay-container {
+    display: none;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0, 0.85);
+}
+
+.overlay-container-box {
+    margin: 60px auto;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    width: 600px;
+}
+
+.overlay-container-box-content {
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.overlay-message {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.overlay-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-button {
+    padding: 12px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-left: 6px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.overlay-button-cancel {
+    background-color: darkred;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #F9F9F9;
+}
+
+.content {
+    min-height: 100%;
+    width: 800px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 62px;
+}
+
+.app-header {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+    background-color: cadetblue;
+}
+
+.app-header span {
+    padding-left: 31px;
+    color: #FFFFFF;
+}
+
+.app-content {
+    margin: 20px;
+}
+
+.app-title {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-title-current {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.app-title-back {
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #333333;
+    cursor: pointer;
+}
+
+.shown {
+    display: block;
+}
+
+.app-error-line {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.app-list ul {
+    padding: 0px;
+}
+
+.app-list li {
+    padding: 6px 0px;
+    margin: 0px 0px 12px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #F7F7F7;
+}
+
+.app-list li:hover {
+    background-color: #F0F0F0;
+}
+
+.app-list-item-name-and-description {
+    width: calc(100% - 30% - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app-list-item-name {
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 12px;
+    overflow: hidden;
+}
+
+.app-list-item-description {
+    font-weight: 300;
+    font-size: 0.7rem;
+    padding-left: 12px;
+    overflow: hidden;
+}
+
+.app-list-item-type {
+    width: 20%;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.app-list-item-type-activity {
+    width: 10%
+}
+
+.app-list-item-state {
+    width: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.app-list-item-state img {
+    width: 24px;
+}
+
+.app-list-add {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.app-list-add-button {
+    padding: 12px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-left: 6px;
+    min-width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.app-list-add-button-cancel {
+    background-color: darkgrey;
+}
+
+.app-add-line {
+    margin-bottom: 12px;
+    display: table;
+    width: 100%;
+}
+
+.app-add-line-label {
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 2px;
+}
+
+.app-add-line-input-container {
+    width: 100%;
+    background-color: #F0F0F0;
+}
+
+.app-add-line-input-container input,
+.app-add-line-input-container select {
+    border: none;
+    outline: none;
+    margin: 12px;
+    width: calc(100% - 24px);
+    background-color: #F0F0F0;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.app-add-line-card-value {
+    padding: 12px;
+    font-weight: 600;
+    background-color: #F0F0F0;
+}
+
+.button-disabled {
+    opacity: 0.2;
+    cursor: default;
+}
+
+.delete-serive-name {
+    font-weight: 600;
+}
+
